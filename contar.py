@@ -1,6 +1,6 @@
 # Función para contar cuántas veces aparece un número en una lista 
 # usando un bucle while
-def contar(lista, numero_buscado):
+def contar(lista: list[int], numero_buscado: int) -> int:
     # Parámetros:
     # lista (list): La lista en la que se buscará el número.
     # numero_buscado (int): El número que se desea contar en la lista.
@@ -27,7 +27,7 @@ resultado = contar(numeros, numero)
 print("    Contar usando while, Iterando sobre la lista")
 print(f"    El número {numero} aparece {resultado} veces en la lista")
 
-def contarRecursivo(l, e):
+def contarRecursivo(l: list[int], e: int) -> int:
     """
     Cuenta cuántas veces aparece un elemento en una lista de forma recursiva.
 
