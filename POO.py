@@ -19,7 +19,7 @@ class Perro():
         self.num_patas = num_patas
         self.num_pasos = 0
         self.nombre = nombre
-        self.edad = edad
+        self.__edad = edad
         self.genero = genero
         self.color = color
         self.raza = raza
@@ -30,6 +30,22 @@ class Perro():
         self.coleteos = coleteos,
         self.hambre = hambre
         
+    @property
+    def viejito(self):
+        if self.__edad > 10:
+            return True
+        return False
+    @property
+    def edad(self):
+        return self.__edad
+    @edad.setter
+    def edad(self, valor):
+        if valor < 0:
+            print("EDAD INVALIDA")
+        else:
+            self.__edad = valor
+            
+
     def ladrar(self, ladrido):
         return ladrido
     
@@ -92,4 +108,7 @@ print(Firulais.estado_animo)
 print(Firulais.coleteos)
 Firulais.comer("croquetas")
 Firulais.defecar(40)
-Firulais.hambre
+print(Firulais.hambre)
+print(Firulais.viejito)
+Firulais.edad = 54
+print(Firulais.edad)
