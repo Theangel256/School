@@ -9,15 +9,10 @@ sizes = {
     "largo": { "price": 25 },
     "xl": { "price": 45 }
     }
-coffes = { "cappuccino": { "price": 53, },
-    "mocha": { "price": 78 },
-    "macchiato": { "price": 69 },
-    "flat white": { "price": 65 },
-    "espresso": { "price": 58 },
-    "latte": { "price": 41 },
-    "americano": { "price": 49 }
+coffes = { 
+    "cappuccino": { "price": 53, }, "mocha": { "price": 78 }, "macchiato": { "price": 69 },
+    "flat white": { "price": 65 }, "espresso": { "price": 58 }, "latte": { "price": 41 }, "americano": { "price": 49 }
 }
-
 def search(valor_a_buscar: str, lista: dict) -> object:
     """
     Esta funcion busca el input del usuario en una lista de opciones
