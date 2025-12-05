@@ -92,12 +92,12 @@ class Guerrero(Personaje):
         """
         Ataca a un enemigo usando el atributo de ataque propio del guerrero.
 
-        Ignora el parámetro `d` si se proporciona, usando siempre `self.ataque`.
+        Ignora el parámetro "d" si se proporciona, usando siempre "self.ataque".
         Imprime un mensaje describiendo el ataque.
 
         Args:
             enemigo (Personaje): El enemigo a atacar.
-            d (int, optional): El daño a infligir. Si es None, usa `self.ataque`.
+            d (int, optional): El daño a infligir. Si es None, usa "self.ataque".
         """
         if d is None:
             d = self.ataque
@@ -137,12 +137,12 @@ class Mago(Personaje):
         """
         Ataca a un enemigo usando el atributo de ataque propio del mago.
 
-        Ignora el parámetro `d` si se proporciona, usando siempre `self.ataque`.
+        Ignora el parámetro "d" si se proporciona, usando siempre "self.ataque".
         Imprime un mensaje describiendo el ataque.
 
         Args:
             enemigo (Personaje): El enemigo a atacar.
-            d (int, optional): El daño a infligir. Si es None, usa `self.ataque`.
+            d (int, optional): El daño a infligir. Si es None, usa "self.ataque".
         """
         if d is None:
             d = self.ataque
@@ -191,12 +191,12 @@ class Arquero(Personaje):
         """
         Ataca a un enemigo usando un valor de ataque aleatorio.
 
-        Obtiene el daño de la propiedad `self.ataque`.
+        Obtiene el daño de la propiedad "self.ataque".
         Imprime un mensaje describiendo el ataque.
 
         Args:
             enemigo (Personaje): El enemigo a atacar.
-            d (int, optional): El daño a infligir. Si es None, usa `self.ataque`.
+            d (int, optional): El daño a infligir. Si es None, usa "self.ataque".
         """
         if d is None:
             d = self.ataque
@@ -226,10 +226,6 @@ class Arquero(Personaje):
         if self._vida < 0:
             self._vida = 0
 
-
-# Funcion principal que se encarga de la simulacion de batalla
-# Crea las instancias de Personaje, Guerrero, Mago y Arquero.
-# Simula una serie de ataques entre ellos y muestra el estado de cada uno.
 def main():
     """
     Función principal para ejecutar la simulación de batalla.
